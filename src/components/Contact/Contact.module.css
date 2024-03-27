@@ -1,0 +1,26 @@
+.container {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.contact {
+  text-align: left;
+}
+
+.button {
+  width: 82px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 8px auto;
+  background-color: rgb(201, 200, 197);
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.icon {
+  margin-right: 10px;
+}
