@@ -45,10 +45,6 @@ const authSlice = createSlice({
         state.loading = false;
         state.error = true;
       })
-      .addCase(logOut.pending, (state) => {
-        state.loading = true;
-        state.error = false;
-      })
       .addCase(logOut.fulfilled, (state) => {
         state.user = {
           name: null,
@@ -57,10 +53,6 @@ const authSlice = createSlice({
         state.token = null;
         state.isLoggedIn = false;
         state.loading = false;
-      })
-      .addCase(logOut.rejected, (state) => {
-        state.loading = false;
-        state.error = true;
       })
       .addCase(refreshUser.pending, (state) => {
         state.isRefreshing = true;
